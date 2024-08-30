@@ -5,7 +5,8 @@ class MyExamplesController < ApplicationController
 
   def generate_random
     random = ["You will embark on a journey that will change your life.", "An unexpected windfall will bring you great joy.", "A new opportunity will soon present itself—be ready to seize it.", "You are about to discover a hidden talent that will surprise you."]
-    number number.times(5) do |rand(1..60)]
+    number = []
+    6.times do number << rand(1..60) end
     render json: { message: random.sample, number: number } 
   end
 
